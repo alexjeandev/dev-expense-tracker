@@ -1,6 +1,7 @@
 import Header from "./components/Header.tsx";
 import MetricCard from "./components/MetricCard.tsx";
 import MostExpensive from "./components/MostExpensive.tsx";
+import DueDates from "./components/DueDates.tsx";
 
 function App() {
   return (
@@ -16,7 +17,11 @@ function App() {
       </div>
 
       {/* Middle row */}
-      <MostExpensive />
+
+      <div className="grid grid-cols-3 gap-4 mb-6">
+        <MostExpensive />
+        <DueDates />
+      </div>
     </div>
   );
 }
